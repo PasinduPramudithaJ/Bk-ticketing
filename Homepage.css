@@ -63,6 +63,7 @@
     background: #135bf2;
     color: white;
     padding: 40px 0;
+    margin-bottom: 1cm;
     
   }
   
@@ -136,6 +137,8 @@
   margin-left: 3cm;
   margin-right: 3cm;
   margin-bottom: 1cm;
+  
+  
  
 }
 
@@ -145,6 +148,8 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-left: 1cm;
+  scroll-behavior: smooth;
+  overflow-x: auto;
   
 }
 .image-box p{
@@ -302,3 +307,23 @@
   .buyTicket:hover{
     opacity: 0.8;
   }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.scroll-left {
+  left: 10px;
+}
+
+.scroll-right {
+  right: 10px;
+}

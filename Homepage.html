@@ -10,6 +10,19 @@
   <link rel="Icon" href="Images/logo.jpeg">
   
 
+  <script>
+    const scrollAmount = 300; // Amount to scroll with each click
+
+    document.querySelector('.scroll-left').addEventListener('click', () => {
+        document.querySelector('.image-box').scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    document.querySelector('.scroll-right').addEventListener('click', () => {
+        document.querySelector('.image-box').scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+</script>
+
+
 </head>
 <body>
 
@@ -45,6 +58,9 @@
     <button class="tab active">This Month</button>
     <button class="tab">Next Month</button></span></p>
   </section>
+  <div>
+    <button class="scroll-button scroll-left"><i class="fas fa-chevron-left"></i></button>
+
 
   <div class="image-gallery">
     <div class="image-box">
@@ -87,7 +103,9 @@
          </div>
     </div>
   </div>
-
+  <button class="scroll-button scroll-right"><i class="fas fa-chevron-right"></i></button>
+</div>
+  </div>
     <section class="monthly-highlights">
       <p class="whats">BK Tickets Deals 
         <span style="margin-left: 23.3cm;">
