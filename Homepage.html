@@ -7,19 +7,20 @@
   <link rel="stylesheet" href="Homepage.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="Icon" href="Images/logo.jpeg">
   
 
   <script>
-    const scrollAmount = 300; // Amount to scroll with each click
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
 
-    document.querySelector('.scroll-left').addEventListener('click', () => {
-        document.querySelector('.image-box').scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    });
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
 
-    document.querySelector('.scroll-right').addEventListener('click', () => {
-        document.querySelector('.image-box').scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    });
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 </script>
 
 
@@ -28,17 +29,22 @@
 
   <!-- Header Section -->
   <header>
-      <nav>
+      <nav class="navbar">
        <span class="logo"><span style="color: #1259f3;font-weight: 700;">Bk</span><span style="color: #4a4d4d;font-weight: 700;">Tickets</span></span><sup><span style="color: #007bff;font-size: 0.75em; vertical-align: super;line-height: 1.5;margin-top: 0.3em;">LK</span></sup>
-        <a href="#">Events</a>
-        <a href="#">Theater</a>
-        <a href="#">Sports</a>
-        <a href="#">Other</a>
-        <a href="#">Deals</a> </nav>
-        <span class="auth-buttons">
-            <button class="register" style="margin-right: 0;">Register</button>
-            <button class="signin"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Sign In</button>
-        </span>
+       <ul class="menu-links">
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Theater</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Other</a></li>
+        <li><a href="#">Deals</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined"><i class="fa fa-times" aria-hidden="true"></i></span>
+    </ul>
+  </nav>
+  <div class="flex">
+    <a class="register">Register</a>
+    <a class="signin"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Sign In</span></a>
+</div>
+<span id="hamburger-btn" class="material-symbols-outlined"><i class="fa fa-solid fa-bars"></i></span>
   </header>
 
   <!-- Search Section -->
