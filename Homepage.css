@@ -354,8 +354,15 @@ margin-top: 5cm;
       margin-bottom: 1cm;
 }
 .view{
-  margin-left: auto;
+  margin-left:20px;;
   margin-right: auto;
 }
+.whats{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1cm;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
 }
 
