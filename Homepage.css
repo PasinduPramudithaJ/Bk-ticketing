@@ -114,7 +114,9 @@
 .monthly-highlights {
   padding: 20px;
 }
-
+.view{
+  margin-left: 14.3cm;
+}
 
 
 .tab {
@@ -350,6 +352,9 @@ margin-top: 5cm;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 1cm;
+}
+.view{
+  margin-left: auto;
 }
 }
 
