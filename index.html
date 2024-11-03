@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="topnav.css">
+    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+    <title>Ticketing</title>
+</head>
+<body>
+    <!-- Top nav start -->
+    <header>
+        <nav class="navbar">
+            <div class="flex">
+                <a href="#" class="logo">
+                    <div class="logo bk">
+                        Bk<span class="ticket">Tickets</span><sup class="lk">LK</sup>
+                    </div>
+                </a>
+                <ul class="menu-links">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Theater</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <span id="close-menu-btn" class="material-symbols-outlined"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </ul>
+            </div>
+            <div class="flex">
+                <a class="register">Register</a>
+                <a class="signin"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Sign In</span></a>
+            </div>
+            <span id="hamburger-btn" class="material-symbols-outlined"><i class="fa fa-solid fa-bars"></i></span>
+        </nav>
+    </header>
+    <!-- Top nav end -->
+
+    <!-- Search section start -->
+    <section class="search hero-section">
+        <div class="content">
+            <h2>Let’s Book Your Ticket</h2>
+            <p>Discover your favorite entertainment right here</p>
+            <div class="search-bar">
+                <i class="fa fa-search" aria-hidden="true"></i> 
+                <input type="text" placeholder="Search by Artist, Event or Venue">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </section>
+    <!-- Search section end -->
+
+    <!-- Script for show and hide navbar in mobile mode -->
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+    
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+    
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+</html>
