@@ -117,6 +117,9 @@
 .view{
   margin-left: 14.3cm;
 }
+.view2{
+  margin-left: 14.3cm;
+}
 
 
 .tab {
@@ -354,11 +357,14 @@ margin-top: 5cm;
       margin-bottom: 1cm;
 }
 .view{
-  margin-left:20px;;
+  margin-left:-1cm;;
   margin-right: auto;
 }
+.view2{
+  margin-right: -1cm;
+}
 .whats{
-  margin-left: auto;
+  margin-left: -1cm;
   margin-right: auto;
   font-size: 1cm;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
