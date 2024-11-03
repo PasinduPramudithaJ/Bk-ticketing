@@ -33,7 +33,6 @@ a{
     text-decoration: none;
 }
 header {
-    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -43,6 +42,7 @@ header {
   
   header .navbar {
     max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,7 +109,6 @@ header {
   }
   .flex{
     display: flex;
-    margin-left: auto;
   }
 .signin{
     margin: 0 5px;
@@ -150,6 +149,9 @@ header {
 
   
   @media screen and (max-width: 900px) {
+    body{
+      margin: 0;
+    }
     header.show-mobile-menu::before {
       content: "";
       height: 100%;
@@ -203,120 +205,3 @@ header {
       display: block;
     }
   }
-
-
-   /* Header */
-   header {
-    background-color:rgba(255, 255, 255, 0.95);;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    position: sticky;
-    font-size: 16px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .logo {
-    font-size: 30px;
-    color: black;
-    margin-left: 3cm;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  nav a {
-    color:black;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
-  .auth-buttons button {
-    margin: 0 5px;
-    padding: 13px 25px;
-    color: white;
-    background: #135bf2;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 2.5cm;
-  }
-  .auth-buttons button:hover{
-    opacity: 0.8;
-  }
- 
-.register:hover{
-    background-color: red;
-    }
-  /* Search Section */
-  .search-section {
-    background: #135bf2;
-    color: white;
-    padding: 40px 0;
-    margin-bottom: 1cm;
-    
-  }
-  
-  .search-section h2 {
-    font-size: 37px;
-    margin-bottom: 10px;
-    margin-left: 3.5cm;
-  }
-  
-  .search-bar {
-    display: flex;
-    justify-content: left;
-    margin-top: 10px;
-    margin-left: 3.5cm;
-  }
-  .search-section p{
-    margin-left: 3.5cm;
-    
-  }
-  .search-bar input {
-    padding: 15px;
-    width: 500px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 1cm;
-  }
-  
-  
-  .search-button {
-    padding: 10px 20px;
-    background-color: #004a99;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1cm;
-
-  }
-  
-  /* Monthly Highlights */
-  .monthly-highlights {
-    padding: 20px;
-  }
-  
-
-  
-  .tab {
-    padding: 8px 15px;
-    margin-right: 10px;
-    border: 1px solid #007bff;
-    border-radius: 10px;
-    background: #fff;
-    cursor: pointer;
-  }
-  
-  .tab.active {
-    background:white;
-    color: rgb(11, 55, 186);
-  }
-  .tab:hover{
-    opacity: 0.7;
-  }
-  /* Event Cards */
