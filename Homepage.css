@@ -362,8 +362,17 @@ margin-top: 5cm;
 }
 .view2{
   margin-left:auto;
-  margin-right: -10px;
+  margin-right: -20px;
 }
+.scroll-left {
+  left: 10px;
+  margin-top: 6cm;
+  }
+  
+  .scroll-right {
+  right: 10px;
+  margin-top: 6cm;
+  }
 
 }
 
