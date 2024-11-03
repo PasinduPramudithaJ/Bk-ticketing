@@ -1,214 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BkTickets | official Online Ticketing in Sri Lanka</title>
-  <link rel="stylesheet" href="Homepage.css">
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="Icon" href="Images/logo.jpeg">
-  
-
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
-
-    // Toggle mobile menu on hamburger button click
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-
-    // Close mobile menu on close button click
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-</script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+    <title>Ticketing</title>
 </head>
 <body>
+    <!-- Top nav start -->
+    <header>
+        <nav class="navbar">
+            <div class="flex">
+                <a href="#" class="logo">
+                    <div class="logo bk">
+                        Bk<span class="ticket">Tickets</span><sup class="lk">LK</sup>
+                    </div>
+                </a>
+                <ul class="menu-links">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Theater</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <span id="close-menu-btn" class="material-symbols-outlined"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </ul>
+            </div>
+            <div class="flex">
+                <a class="register">Register</a>
+                <a class="signin"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Sign In</span></a>
+            </div>
+            <span id="hamburger-btn" class="material-symbols-outlined"><i class="fa fa-solid fa-bars"></i></span>
+        </nav>
+    </header>
+    <!-- Top nav end -->
 
-  <!-- Header Section -->
-  <header>
-      <nav class="navbar">
-       <span class="logo"><span style="color: #1259f3;font-weight: 700;">Bk</span><span style="color: #4a4d4d;font-weight: 700;">Tickets</span></span><sup><span style="color: #007bff;font-size: 0.75em; vertical-align: super;line-height: 1.5;margin-top: 0.3em;">LK</span></sup>
-       <ul class="menu-links">
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Theater</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Other</a></li>
-        <li><a href="#">Deals</a></li>
-        <span id="close-menu-btn" class="material-symbols-outlined"><i class="fa fa-times" aria-hidden="true"></i></span>
-    </ul>
-  </nav>
-  <div class="flex">
-    <a class="register">Register</a>
-    <a class="signin"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Sign In</span></a>
-</div>
-<span id="hamburger-btn" class="material-symbols-outlined"><i class="fa fa-solid fa-bars"></i></span>
-  </header>
-
-  <!-- Search Section -->
-   <nav>
-  <section class="search-section">
-    <h2 style="margin-top: 2cm;">Let's Book Your Ticket</h2>
-    <p>Discover your favorite entertainment right here</p>
-    <div class="search-bar">
-    <input type="text" placeholder="Search by Artist, Event or Venue">
-      <button class="search-button">Search</button>
-    </div>
-  </section></nav>
-
-  <!-- Monthly Highlights Section -->
-  <section class="monthly-highlights">
-    <p class="whats">What's happening <span style="color: #007bff;"> this month</span>
-   <span style="margin-left: 14.3cm;">
-    <button class="tab active">This Month</button>
-    <button class="tab">Next Month</button></span></p>
-  </section>
-  <div>
-    <button class="scroll-button scroll-left"><i class="fas fa-chevron-left"></i></button>
-
-
-  <div class="image-gallery">
-    <div class="image-box">
-        <img src="Images/kitulgala.jpg" alt="travel">
-        <p style="margin-left:0.5cm;">Kitulgala Rafting / Canyoning <br><br>
-         <span style="opacity: 0.6;"><i class="fas fa-calendar-alt"></i>Nov 03, 2024 • 09.00 AM IST <br><br>
-          <i class="fas fa-map-marker-alt"></i>Kitulgala</span>  <br><br><span style="color: #1259f3;font-weight: 700;">8,500 LKR</span><span style="opacity: 0.6;">&nbsp;upwards</span></p>
-          <div class="buyTicket">
-            <p style="text-align: center;"> <br>Buy Tickets <br><br></p>
-          </div>
-    </div>
-
-   <div class="image-box">
-        <img src="Images/film1.jpg" alt="protectnature">
-        <p style="margin-left:0.5cm;">හරිම බඩු 3ක් <br><br>
-          <span style="opacity: 0.6;"><i class="fas fa-calendar-alt"></i>Nov 08, 2024 • 03.30 PM IST <br><br>
-           <i class="fas fa-map-marker-alt"></i>Tower Hall Theatre</span>  <br><br><span style="color: #1259f3;font-weight: 700;">500 LKR</span><span style="opacity: 0.6;">&nbsp;upwards</span></p>
-           <div class="buyTicket">
-             <p style="text-align: center;"> <br>Buy Tickets <br><br></p>
-           </div>
-    </div>
-
-    <div class="image-box">
-        <img src="Images/film2.jpg" alt="waterfall">
-        <p style="margin-left:0.5cm;">Walabhagini - වලඹගිනි<br><br>
-          <span style="opacity: 0.6;"><i class="fas fa-calendar-alt"></i>Nov 08, 2024 • 06.30 PM IST<br><br>
-           <i class="fas fa-map-marker-alt"></i>Kitulgala</span>  <br><br><span style="color: #1259f3;font-weight: 700;">500 LKR</span><span style="opacity: 0.6;">&nbsp;upwards</span></p>
-           <div class="buyTicket">
-             <p style="text-align: center;"> <br>Buy Tickets <br><br></p>
-           </div>
-    </div>
-
-    <div class="image-box">
-      <img src="Images/film3.jpg" alt="waterfall">
-      <p style="margin-left:0.5cm;">Chandrawanka Handiya<br><br>
-        <span style="opacity: 0.6;"><i class="fas fa-calendar-alt"></i>Nov 08, 2024 • 06.30 PM IST <br><br>
-         <i class="fas fa-map-marker-alt"></i>Viharamaha Devi Open  Theater</span>  <br><br><span style="color: #1259f3;font-weight: 700;">500 LKR</span><span style="opacity: 0.6;">&nbsp;upwards</span></p>
-         <div class="buyTicket">
-           <p style="text-align: center;"> <br>Buy Tickets <br><br></p>
-         </div>
-    </div>
-  </div>
-  <button class="scroll-button scroll-right"><i class="fas fa-chevron-right"></i></button>
-</div>
-  </div>
-    <section class="monthly-highlights">
-      <p class="whats">BK Tickets Deals 
-        <span style="margin-left: 23.3cm;">
-          <button class="tab active">View More</button>
-         </span>
-      </p>
+    <!-- Search section start -->
+    <section class="search hero-section">
+        <div class="content">
+            <h2>Let’s Book Your Ticket</h2>
+            <p>Discover your favorite entertainment right here</p>
+            <div class="search-bar">
+                <i class="fa fa-search" aria-hidden="true"></i> 
+                <input type="text" placeholder="Search by Artist, Event or Venue">
+                <button type="submit">Search</button>
+            </div>
+        </div>
     </section>
+    <!-- Search section end -->
 
-
-    <div class="image-gallery">
-    <div class="image-box">
-    <img src="Images/wayo.png" alt="waterfall">
-    <p style="margin-left:0.5cm;">WAYO අනාගතයෙන් දිගන්තයට<br><br>
-      <span style="opacity: 0.6;"><i class="fas fa-calendar-alt"></i>Nov 03, 2024 • 09.00 AM IST <br><br>
-       <i class="fas fa-map-marker-alt"></i>Kitulgala</span>  <br><br><span style="color: #1259f3;font-weight: 700;">2,500 LKR</span><span style="opacity: 0.6;">&nbsp;upwards</span></p>
-       <div class="buyTicket">
-         <p style="text-align: center;"> <br>Buy Tickets <br><br></p>
-       </div>
-    </div>
-
-    <div class="image-box">
-      <img src="Images/ravana.jpg" alt="waterfall">
-      <p style="margin-left:0.5cm;">WAYO අනාගතයෙන් දිගන්තයට<br><br>
-        <span style="opacity: 0.6;"><i class="fas fa-calendar-alt"></i>Nov 03, 2024 • 09.00 AM IST <br><br>
-         <i class="fas fa-map-marker-alt"></i>Kitulgala</span>  <br><br><span style="color: #1259f3;font-weight: 700;">2,500 LKR</span><span style="opacity: 0.6;">&nbsp;upwards</span></p>
-         <div class="buyTicket">
-           <p style="text-align: center;"> <br>Buy Tickets <br><br></p>
-         </div>
-      </div>
-
-</div>
-
-
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-container">
-        <!-- About Us Section -->
-        <div class="footer-column">
-            <h2>BkTickets</span></span><sup><span style="font-size: 0.75em; vertical-align: super;line-height: 1.5;margin-top: 0.3em;">LK</span></sup></h2>
-            <p style="text-align: initial; margin-top: 0.7cm;">BkTickets, Sri Lanka's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Sri Lanka.</p>
-            <!-- Social Icons -->
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <br>
-            <!-- Payment Icons -->
-            <div class="payment-icons">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
-            </div>
-        </div>
-        
-        <!-- Helpful Links -->
-        <div class="footer-column links" style="margin-left: 2cm;">
-            <h3>Helpful Links</h3>
-            <ul>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">MyTickets Deals</a></li>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Refund Policy</a></li>
-            </ul>
-        </div>
-        
-        <!-- About Us Links -->
-        <div class="footer-column links">
-            <h3>About Us</h3>
-            <ul>
-                <li><a href="#">Who We Are</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="footer-column contact">
-            <h3>Contact</h3>
-            <p><i class="fab fa-whatsapp"></i> WhatsApp (Text-only service)</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:support@mytickets.lk">support@bktickets.lk</a></p>
-        </div>
-    </div>
-
-    <!-- Bottom Bar -->
-     <nav>
-</footer>
-<div class="bottom-bar" >
-    <h4 style="margin-left: 3cm;"><a href="#">Privacy Policy</a> | 
-    <a href="#">Cookie Policy</a> | 
-    <a href="#">Terms and Conditions</a><span style="margin-left: 15cm; opacity: 0.5;">Copyright 2014-2024 © MyTickets All Rights Reserved</span></h4>
-   
-</div></nav>
+    <!-- Script for show and hide navbar in mobile mode -->
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+    
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+    
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
 </body>
 </html>
